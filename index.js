@@ -2,14 +2,14 @@ const express = require("express");
 const app = express();
 
 let planets = {
-  1: { id: '1', name: 'Mercury', moons: 0 },
-  2: { id: '2', name: 'Venus', moons: 0 },
-  3: { id: '3', name: 'Earth', moons: 1 },
-  4: { id: '4', name: 'Mars', moons: 2 },
-  5: { id: '5', name: 'Jupiter', moons: 79 },
-  6: { id: '6', name: 'Saturn', moons: 62 },
-  7: { id: '7', name: 'Uranus', moons: 27 },
-  8: { id: '8', name: 'Neptune', moons: 14 },
+  1: { position: 1, name: 'Mercury', moons: 0 },
+  2: { position: 2, name: 'Venus', moons: 0 },
+  3: { position: 3, name: 'Earth', moons: 1 },
+  4: { position: 4, name: 'Mars', moons: 2 },
+  5: { position: 5, name: 'Jupiter', moons: 79 },
+  6: { position: 6, name: 'Saturn', moons: 62 },
+  7: { position: 7, name: 'Uranus', moons: 27 },
+  8: { position: 8, name: 'Neptune', moons: 14 },
 };
  
 app.get('/planets', (req, res) => {
