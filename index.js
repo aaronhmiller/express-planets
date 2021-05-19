@@ -20,21 +20,5 @@ app.get('/planets/:id', (req, res) => {
   return res.send(planets[req.params.id]);
 });
  
-app.post('/', (req, res) => {
-  return res.send('Received a POST HTTP method');
-});
- 
-app.put('/', (req, res) => {
-  return res.send('Received a PUT HTTP method');
-});
- 
-app.delete('/', (req, res) => {
-  return res.send('Received a DELETE HTTP method');
-});
-
-app.patch('/', (req, res) => {
-  return res.send('Received a PATCH HTTP method');
-});
-
 const port = process.env.PORT || 3000;
 app.listen(port,() => console.log(`listening on port ${port}`));
