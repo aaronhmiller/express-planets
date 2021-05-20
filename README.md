@@ -1,4 +1,4 @@
-# planets-express
+# express-planets
 Dockerizing Node.js Express application framework while providing comparision between [Flask](https://github.com/aaronhmiller/planets-workspace) and Express implementations.
 
 ## Running
