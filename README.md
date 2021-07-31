@@ -11,8 +11,6 @@ Alternatively, use its more portable form and run it as a Docker Container:
 
 To build, clone this repo and:
 
-`cd app`
-
 `docker buildx create --use` (for multi-platform usage)
 
 `docker buildx build --platform linux/amd64,linux/arm64 -t <your_docker_hub_account>/express-planets --push .`
