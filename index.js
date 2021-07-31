@@ -11,6 +11,10 @@ let planets = [
   { position: 7, name: 'Uranus', moons: 27 },
   { position: 8, name: 'Neptune', moons: 14 },
 ];
+
+app.get('/', (req, res) => {
+  return res.send("Welcome to the Planets App! Try :" + `${port}` + "/planets")
+});
  
 app.get('/planets', (req, res) => {
   return res.send(planets);
