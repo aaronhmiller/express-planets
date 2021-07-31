@@ -5,14 +5,14 @@ Dockerizing Node.js Express application framework while providing comparision be
 
 `node index.js`
 Alternatively, use its more portable form and run it as a Docker Container:
-`docker run -d --rm --name planets -p 3000:3000 kongaaron/express-planets`
+`docker run -d --rm --name planets -p 3000:3000 saltaaron/express-planets`
 
-## Building your own
+## Build
 
-To build and tag a new image, clone this repo and:
+To build, clone this repo and:
 
-```
-docker build -t <your_docker_hub_account>/express-planets:1.0 -t <your_docker_hub_account>/express-planets:latest .
-```
+`cd app`
 
-Once you tag and build, upload to `hub.docker.com`: `docker push <your_docker_hub_account>/express-planets`
+`docker buildx create --use` (for multi-platform usage)
+
+`docker buildx build --platform linux/amd64,linux/arm64 -t <your_docker_hub_account>/express-planets --push .`
