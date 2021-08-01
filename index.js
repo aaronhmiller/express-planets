@@ -10,6 +10,7 @@ let planets = [
   { position: 6, name: 'Saturn', moons: 62 },
   { position: 7, name: 'Uranus', moons: 27 },
   { position: 8, name: 'Neptune', moons: 14 },
+  { position: 9, name: 'Pluto', moons: 0 }
 ];
 
 app.get('/', (req, res) => {
