@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/aaronhmiller/express-planets/actions/workflows/node.js.yaml/badge.svg)](https://github.com/aaronhmiller/express-planets/actions/workflows/node.js.yaml)
+
 # express-planets
 Dockerizing Node.js Express application framework while providing comparision between [Flask](https://github.com/aaronhmiller/planets-workspace) and Express implementations.
 
