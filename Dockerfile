@@ -1,5 +1,5 @@
 FROM alpine
-WORKDIR /app
+#WORKDIR /app
 COPY package.json .
 RUN apk add --update npm && \
     npm install express
