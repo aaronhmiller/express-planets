@@ -4,5 +4,7 @@ COPY package.json .
 RUN apk add --update npm && \
     npm install express
 COPY . ./
-EXPOSE 80
+ARG PORT
+ENV PORT=$PORT
+EXPOSE PORT
 CMD ["node", "index.js"]
