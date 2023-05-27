@@ -6,5 +6,5 @@ RUN apk add --update npm && \
 COPY . ./
 ARG PORT
 ENV PORT=$PORT
-EXPOSE PORT
+EXPOSE $PORT
 CMD ["node", "index.js"]
