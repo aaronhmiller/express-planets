@@ -24,5 +24,5 @@ app.get('/planets/:id', (req, res) => {
   return res.send(planets[req.params.id-1]);
 });
 
-const port = 443;
+const port = 80;
 app.listen(port,() => console.log(`listening on port ${port}`));

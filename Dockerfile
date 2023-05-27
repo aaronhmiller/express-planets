@@ -4,5 +4,5 @@ COPY package.json .
 RUN apk add --update npm && \
     npm install express
 COPY . ./
-EXPOSE 443
+EXPOSE 80
 CMD ["node", "index.js"]
